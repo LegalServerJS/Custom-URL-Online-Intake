@@ -22,7 +22,7 @@ function matthew_RemoteClinic(){
 	//Hide Remote Clinic Label and Field
 	//Note: You cannot check the hidden box on LS as it becomes impossible to set dynamically. So you show it, set it, and hide it.
 	document.getElementById(rm_clinic_id).style.visibility = 'hidden'; //Hide the input
-	document.querySelectorAll('[for="form_element_select_19_input"]')[0].style.visibility='hidden';//Hide the label	
+	document.querySelectorAll('[for="' + rm_clinic_id + '"]')[0].style.visibility='hidden';//Hide the label	
 }
 function getParameterByName(name, url) {
 	//Gets the name of a specified parameter from the URL.
